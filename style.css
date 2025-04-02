@@ -156,7 +156,7 @@ html {
     border-collapse: collapse;
     border: 2px solid gray;
     max-width: 100%;
-    /* table-layout: fixed; */
+    margin: 0 auto;
 }
 
 .bucket-table tr th{
@@ -166,14 +166,12 @@ html {
     font-size: 1.5rem;
     word-wrap: break-word; 
     text-overflow: ellipsis; 
-    /* overflow: scroll; */
 }
 
 .bucket-table tr td{
     padding: 0.5rem;
-    word-wrap: break-word; /* Ensure long words break correctly */
-    text-overflow: ellipsis; /* Add ellipsis if the text is too long */
-    /* overflow: scroll; */
+    word-wrap: break-word; 
+    text-overflow: ellipsis; 
 }
 
 /* Contact Me styles */
@@ -314,7 +312,7 @@ footer p{
     }
 
     .about-image img {
-        width: 80%;  
+        width: 100%;  
         border-radius: 50%;
     }
 
