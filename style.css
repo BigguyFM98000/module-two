@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: papayawhip;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5781de;
+    padding: 20px 50px;
+    position: relative;
+}
+
+.logo{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    width: 35px;
+    height: 4px; 
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 3px 0px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin-right: 25px;
+}
+
+.nav-links li a{
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.nav-links li a:hover{
+    color: #1f376b;
+}
+
+/* Home styles */
+.home-content {
+    background-image: url('media/pexels-joshsorenson-1714208.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.home-content h1{
+    font-size: 2.5rem;
+    color: blue;
+    font-weight: bolder;
+}
+
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+/* About Me styles */
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.about-content h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #5781de;
+    text-align: center;
+}
+
+.about-content p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.about-image img{
+    border-radius: 50%;
+}
+
+/* My Interests styles */
+#interests {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#interests h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #5781de;
+}
+
+#interests ul{
+    list-style: none;
+}
+
+#interests ul li{
+    background-color: #333;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* My Bucket List styles */
+#bucket-list{
+    padding: 1.5rem;
+    overflow-x: auto;
+}
+
+#bucket-list h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #5781de;
+    text-align: center;
+}
+
+.bucket-table {
+    border-collapse: collapse;
+    border: 2px solid gray;
+    max-width: 100%;
+    /* table-layout: fixed; */
+}
+
+.bucket-table tr th{
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    word-wrap: break-word; 
+    text-overflow: ellipsis; 
+    /* overflow: scroll; */
+}
+
+.bucket-table tr td{
+    padding: 0.5rem;
+    word-wrap: break-word; /* Ensure long words break correctly */
+    text-overflow: ellipsis; /* Add ellipsis if the text is too long */
+    /* overflow: scroll; */
+}
+
+/* Contact Me styles */
+#contact {
+    padding: 1.5rem;
+}
+
+#contact h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #5781de;
+    text-align: center;
+}
+
+.contact-form {
+    width: 80%;
+    border: 2px solid gray;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.contact-form p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0.5rem;
+}
+
+.contact-form p label{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.contact-form p input, textarea{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form button{
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: green;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Fun Media styles */
+#media{
+    padding: 1.5rem;
+}
+
+#media h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #5781de;
+    text-align: center;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer styles */
+footer{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar{
+        padding: 20px 25px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: #5472b3;
+        padding: 25px;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-links li {
+        padding: 12px 0px;
+    }
+
+    .nav-links.active{
+        display: block;
+    }
+
+     /* Home Section */
+     .home-content {
+        background-size: cover;
+        height: 90vh;
+        opacity: 0.7;
+        width: 100%;  
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    /* About Section */
+    #about {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .about-content p {
+        font-size: 1.2rem;
+    }
+
+    .about-image img {
+        width: 80%;  
+        border-radius: 50%;
+    }
+
+    /* My Interests Section */
+    #interests ul li {
+        font-size: 1.2rem;
+    }
+
+    /* My Bucket List Section */
+    .bucket-table {
+        font-size: 1.2rem;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .bucket-table th, .bucket-table td {
+        padding: 0.8rem;
+    }
+
+    /* Contact Section */
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form p {
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+
+    .contact-form p input, .contact-form p textarea {
+        width: 100%;
+    }
+
+    .contact-form button {
+        padding: 0.8rem;
+    }
+
+    /* Fun Media Section */
+    .media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-container img, .media-container video {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    /* Footer Section */
+    footer p {
+        font-size: 1.2rem;
+    }
+
+}

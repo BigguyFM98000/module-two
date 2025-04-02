@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fhatuwani Martin Raphalalani's personal profile page, showcasing skills, interests, and contact details.">
+    <meta name="keywords" content="Fhatuwani Martin Raphalalani, web developer, software developer, portfolio, interests">
+
+    <title>Personal Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Fhatuwani.</div>
+            <div class="toggle-button" id="toggleButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#interests">My Interests</a></li>
+                <li><a href="#bucket-list">My Bucket List</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#media">Fun Media</a></li>
+            </ul>
+        </div>
+        <div class="home-content">
+            <h1>Fhatuwani Martin Raphalalani</h1>
+            <p>Welcome to my personal profile page.</p>
+        </div>
+    </header>
+    <main>
+        <article id="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I hold a BSc Mathematical Sciences degree from the University of Limpopo. I am passionate about computers and coding. I have almost 2 years experience in software development and web development. Through those years, I have gained skills in HTML, CSS, Javascript, Tailwind CSS, React, Angular, Node.js, Express.js, Mongodb and Postgresql.</p>
+            </div>
+            <div class="about-image">
+                <img src="media/fhatu_da_office.jpg" alt="A picture of Fhatuwani in the office">
+            </div>
+        </article>
+        <hr/>
+        <article id="interests"> 
+            <h2>My Interests</h2>
+            <ul>
+                <li>Reading books.</li>
+                <li>Coding.</li>
+                <li>Watching movies and series.</li>
+                <li>Cycling</li>
+            </ul>
+        </article>
+        <hr/>
+        <section id="bucket-list">
+            <h2>My Bucket List</h2>
+            <table border="1" class="bucket-table">
+                <tr>
+                    <th>Bucket list item</th>
+                    <th>Item description</th>
+                    <th>Reason for adding</th>
+                    <th>Current status</th>
+                </tr>
+                <tr>
+                    <td>Learn how to code.</td>
+                    <td>Learning the fundamentals of web development.</td>
+                    <td>I am passionate in web development.</td>
+                    <td>Completed.</td>
+                </tr>
+                <tr>
+                    <td>Create my own website.</td>
+                    <td>Code my website using html, css and javascript.</td>
+                    <td>I want to promote myself virtually.</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Get a job as web developer.</td>
+                    <td>Get hired by a tech company.</td>
+                    <td>I want to work for a living.</td>
+                    <td>In progress.</td>
+                </tr>
+                <tr>
+                    <td>Site seeing in Cape Town.</td>
+                    <td>Visit Cape Town for a holiday.</td>
+                    <td>I want to explore the beach and the city.</td>
+                    <td>Not started.</td>
+                </tr>
+            </table>
+            <br/>
+        </section>
+        <hr/>
+        <section id="contact">
+            <h2>Contact Me.</h2>
+            <form class="contact-form">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr/>
+        <section id="media">
+            <h2>Fun Media</h2>
+            <div class="media-container">
+                <img src="media/pexels-joshsorenson-1714208.jpg" alt="Image of computer setup at home" width="48%"/>
+                <br/>
+                <video src="media/HEAVY-K ft Natalia Mabaso - UYEKE-Official Video-.mp4" controls width="48%"></video>
+            </div>
+        </section>
+    </main>
+    <hr/>
+    <footer>
+        <p>&copy; 2025 Fhatuwani Martin Raphalalani</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const navLinks = document.getElementById('navLinks');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
